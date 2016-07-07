@@ -105,7 +105,6 @@ void handle_IRQ(unsigned int irq, struct pt_regs *regs)
 #endif
 
 	set_irq_regs(old_regs);
-	perf_mon_interrupt_out();
 }
 
 /*
